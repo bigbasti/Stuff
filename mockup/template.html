@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>b8r</title>
+
+		<link rel="stylesheet" href="./css/hljs/vs.css">
+		<script src="./js/jquery-2.1.3.min.js"></script>
+		<script src="./js/highlight.pack.js"></script>
+		
+
+		<style type="text/css">
+			body{
+			    background: #fff;
+			    color: #222;
+			    font-size: 20px;
+			    font-family: "Open Sans","Segoe UI",Arial,sans-serif;
+			    line-height: 1.4em;
+			}
+
+			ol,ul {
+			    list-style: none
+			}
+
+			blockquote,q {
+			    background: #f9f9f9;
+				border-left: 10px solid #ccc;
+				color: gray;
+				font-style: italic;
+				margin: 1.5em 0px;
+				padding: 0.5em 10px;
+			}
+
+			blockquote cite{
+				font-size: 75%;
+			}
+
+			cite:before {
+			    content: '\2014 \2009';
+			}
+
+			table {
+			    border-collapse: collapse;
+			    border-spacing: 0
+			}
+
+			h1 {
+			    font-size: 40px;
+			}
+
+			h2 {
+			    font-size: 30px;
+			}
+
+			img{
+				max-width: 590px;
+				border-radius: .25em;
+				margin: 5px;
+				text-align: center;
+			}
+
+			h1,h2,h3 {
+			    margin-bottom: 5px;
+			    letter-spacing: -1px;
+			    line-height: 1.2em;
+			    font-weight: 200;
+			    font-family: "Source Sans Pro";
+			    text-align: left;
+			}
+
+			pre code,.block-code {
+			    background: #f9f9f9!important;
+			    border: none;
+			    border-radius: 0;
+			    display: block;
+			    line-height: 1.3em;
+			    margin: 15px 0;
+			    font-size: .94rem;
+			    overflow: auto;
+			    padding: 10px 15px!important;
+			    border-left: 10px solid #ccc;
+			    font-family: Consolas,Menlo,Monaco,"Courier New",monospace!important;
+			    text-align: left;
+			    -ms-word-wrap: normal;
+			    word-wrap: normal
+			}
+
+			a {
+			    color: #2BC288;
+			    outline: none;
+			    text-decoration: none
+			}
+
+			a:hover,a:focus {
+			    text-decoration: underline
+			}
+
+			article {
+				margin-top: 0px !important;
+				margin-bottom: 30px !important;
+			}
+
+			footer.body{
+				border-top: 5px solid #ccc;
+				background-color: #f9f9f9;
+				color: gray;
+			}
+
+			footer.body{
+				border-top: 5px solid #ccc;
+				background-color: #f9f9f9;
+				color: gray;
+				padding: 3px;
+				font-size: 75%;
+			}
+
+			hr{
+				border: 1px solid gray;
+			}
+
+			.twitter-tweet{
+				background: #F1FCFF;
+				border-left: 10px solid #C7E7FF;
+			}
+
+			.twitter-tweet a{
+				color: #2B6CC2;
+			}
+
+			#content {
+			    overflow: auto;
+			    margin: auto;
+			    min-width: 320px;
+			    text-align: justify;
+			    -moz-box-sizing: border-box;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    -ms-word-wrap: break-word;
+			    word-wrap: break-word
+			}
+
+			.entry-content p, footer.body p{
+				margin: 0px;
+			}
+
+			.published, .tag, .link{
+				background-color: #D7D7D7;
+				white-space: nowrap;
+				border-radius: .25em;
+				color: #fff;
+				padding: .2em .6em .3em;
+				font-size: 50%;
+				font-weight: 700;
+			}
+
+			.tag, .link{
+				background-color: #90DDC3;
+			}
+
+			.link{
+				background-color: #90DDDD;
+			}
+
+			.home{
+				margin-left: auto;
+				margin-right: auto;
+				width: 600px;
+			}
+
+			.query-input{
+				width:100%;
+				height: 30px;
+				font-size: x-large;
+				padding:5px;
+				border: 0px;
+				border-bottom: 5px solid lightgray;
+				font-family: "Lucida Console";
+				outline: none;
+			}
+
+			.query-tag{
+				font-size: 75%;
+				white-space: nowrap;
+				border-radius: .25em;
+				padding: .2em .6em .3em;
+				font-weight: 700;
+				background-color: #D7D7D7;
+				color: gray;
+			}
+
+			.centered{
+				text-align: center;
+			}
+		</style>
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="home" id="index">
+		<header class="body" id="banner">
+			<input type="text" name="query" id="query" class="query-input" placeholder="query..." />
+		</header><!-- /#banner -->
+		<section class="body" id="content">
+			<article class="hentry">
+				<header>
+					<h1 class="entry-title">
+						Ein Beitrag mit Titel
+					</h1>
+				</header>
+				<div class="entry-content">
+					<p>In diesem Beitrag ist auch weiterhin ein Text enthalten damit es nciht sooo leer ist. Weterhin haben wir auch einen Link: 
+						<a href="#">klick mich</a>
+						Und noch etwas weiteren Text.</p>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Das ist ein Beitrag ohne einen Titel. Muss ja auch nicht immer sein oder? Der Rest des Beitrags sieht eigentlich genauso aus wie mit Titel nur halt ohne.</p>
+					<p><h2>Untertitel</h2>Dafür hat dieser Beitrag aber einen eigenen Untertitel :)</p>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Dieser Beitrag enthält neben ein wenig text auch ein Zitat:</p>
+					<blockquote>
+						<p>Das ist ein richtig witziges Zitat das ihr unbedingt kennen solltet!</p>
+						<cite>Sebastian Gross</cite>
+					</blockquote>
+					<p>War das nicht ein spitzen Zitat?</p>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Dieser Beitrag ist richtig schön bunt da er eine tolle Grafik enthält</p>
+					<img src="beimir.png" />
+					<p>Was wäre die Welt nur ohne so schöne kleine grafiken oder?</p>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Dieser Beitrag ist besonders cool da er einen ganzen Tweet einbettet:</p>
+					<blockquote class="twitter-tweet" lang="en"><p>So etwas wie Mobile Docker 😉 Mobiles OS: Microsofts Idee eines Multi-Boot-Betriebssystems <a href="http://t.co/JY75udZXqF">http://t.co/JY75udZXqF</a></p><cite>Hans-Peter Schelian (@SchelianHP) <a href="https://twitter.com/SchelianHP/status/587616352598384640">April 13, 2015</a></cite></blockquote>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Einträge können natürlich auch Videos enthalten, so wie dieses YouTube Video:</p>
+					<iframe width="600" height="338" src="https://www.youtube.com/embed/CLrK91MaKKI" frameborder="0" allowfullscreen></iframe>
+					<p>Oder dieses Video von Vimeo:</p>
+					<iframe src="https://player.vimeo.com/video/124523399?color=e63051&badge=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Natürlich kann man auch Code posten:</p>
+					<pre><code>&lt;Labor&gt;
+  &lt;AIX ImageIndex="1" Expanded="true"&gt;
+	&lt;coblpo63 ImageIndex="6" Expanded="false" /&gt;
+	&lt;cof1av5 ImageIndex="6" Expanded="false" /&gt;
+	&lt;q4de8pcoh20 ImageIndex="6" Expanded="false" /&gt;
+  &lt;/AIX&gt;
+  &lt;Solaris ImageIndex="1" Expanded="true"&gt;
+	&lt;q4de8psa913 ImageIndex="6" Expanded="false" /&gt;
+	&lt;q4de8psa914 ImageIndex="6" Expanded="false" /&gt;
+	&lt;tmv1726 ImageIndex="6" Expanded="false" /&gt;
+  &lt;/Solaris&gt;
+&lt;/Labor&gt;</code></pre>
+					<p>Oder etwas Java code:</p>
+					<pre><code>/// &lt;summary&gt;
+/// Mit dem Ausführen dieser Methode beginnt der Download
+/// dann durch das Ausführen der Stop()-Methode wieder 
+/// &lt;/summary&gt;
+public static int[][] getTransposedMatrix(int[][] matrix){
+  if(!isValidMatrix(matrix)){return null;}
+  if(matrix.length &lt; 1 || matrix[0].length &lt; 1){return null;}
+	
+  int[][] transponiert = new int[matrix[0].length][matrix.length];
+	
+  for(int z=0;z&lt;matrix.length;z++){
+    for(int s=0;s&lt;matrix[z].length;s++){
+      transponiert[s][z] = matrix[z][s];
+    }
+  }
+	
+  return transponiert;
+}</code></pre>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+			<article class="hentry">
+				<div class="entry-content">
+					<p>Dieser Artikel hat ein Vine Video eingebunden:</p>
+					<iframe src="https://vine.co/v/eBVIE1Fjrju/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+				</div>
+				<footer class="post-info">
+					<span class="published">14.10.2015</span>
+					<span class="tag">Info</span>
+					<span class="tag">Wichtig</span>
+					<span class="link">#</span>
+				</footer>
+			</article>
+		</section>
+		<footer class="body" id="contentinfo">
+			<p>Active Query: <span class="query-tag">new</span> <span class="query-tag">first</span></p>
+			<p class="centered">Impressum</p>
+		</footer>
+	</body>
+	<script type="text/javascript">
+
+		$('pre code').each(function(i, block) {
+		  hljs.highlightBlock(block);
+		});
+	</script>
+</html>
